@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.novoda.lib</groupId>
 	<artifactId>imageloader</artifactId>
-	<version>0.1.2-SNAPSHOT</version>
+	<version>0.1.1</version>
 	<packaging>jar</packaging>
 	<name>Image Loader</name>
 	<description>Image Loader</description>
