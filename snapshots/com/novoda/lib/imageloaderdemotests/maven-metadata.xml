@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.novoda.lib</groupId>
-  <artifactId>imageloader</artifactId>
+  <artifactId>imageloaderdemotests</artifactId>
   <versioning>
     <versions>
-      <version>0.1.0-SNAPSHOT</version>
-      <version>0.1.1-SNAPSHOT</version>
       <version>0.1.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110811155127</lastUpdated>
+    <lastUpdated>20110811155136</lastUpdated>
   </versioning>
 </metadata>
