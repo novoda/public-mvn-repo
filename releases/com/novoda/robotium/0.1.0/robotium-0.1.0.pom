@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.novoda</groupId>
+		<artifactId>android</artifactId>
+		<version>0.1.1</version>
+	</parent>
+	<groupId>com.novoda</groupId>
+	<artifactId>robotium</artifactId>
+	<version>0.1.0</version>
+	<name>robotium</name>
+    <packaging>pom</packaging>
+
+	<repositories>
+		<repository>
+			<id>public-mvn-repo-snapshots</id>
+			<url>https://github.com/novoda/public-mvn-repo/raw/master/snapshots</url>
+		</repository>
+		<repository>
+			<id>public-mvn-repo-releases</id>
+			<url>https://github.com/novoda/public-mvn-repo/raw/master/releases</url>
+		</repository>
+		<repository>
+            <id>oss.sonatype.org-jayway-with-staging</id>
+            <url>http://oss.sonatype.org/content/groups/jayway-with-staging/</url>
+            <snapshots>
+            	<enabled>true</enabled>
+            </snapshots>
+        </repository>
+	</repositories>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>${android.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+            <groupId>com.jayway.android.robotium</groupId>
+            <artifactId>robotium-solo</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android-test</artifactId>
+			<version>${android.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>
