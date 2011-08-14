@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.novoda</groupId>
+		<artifactId>team</artifactId>
+		<version>0.1.2</version>
+		<relativePath></relativePath>
+	</parent>
+	<groupId>com.novoda.lib</groupId>
+	<artifactId>imageloader</artifactId>
+	<version>0.1.2</version>
+	<packaging>jar</packaging>
+	<name>Image Loader</name>
+	<description>Image Loader</description>
+
+	<properties>
+		<android.version>2.2.1</android.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>${android.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		 <dependency>
+        	<groupId>com.pivotallabs</groupId>
+        	<artifactId>robolectric</artifactId>
+        	<version>1.0-RC1</version>
+        	<scope>test</scope>
+     	</dependency>
+    	<dependency>
+    	 	<groupId>org.mockito</groupId>
+		  	<artifactId>mockito-core</artifactId>  
+		  	<version>1.9.0-rc1</version> 
+		  	<scope>test</scope>
+  		</dependency>
+  		<dependency>
+    		<groupId>commons-io</groupId>
+    		<artifactId>commons-io</artifactId>
+    		<version>2.0.1</version>
+    		<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
