@@ -1,1 +1,29 @@
 Maven repository for open source project of novoda
+
+if you want to use the jars in this repository you need to set up a profile of maven in ~/.m2/settings.xml
+something like :
+
+ <profiles>
+    <profile>
+      <id>novoda</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <name>Maven Repository Switchboard</name>
+          <layout>default</layout>
+          <url>http://repo1.maven.org/maven2</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>public-mvn-repo-snapshots</id>
+          <url>https://github.com/novoda/public-mvn-repo/raw/master/snapshots</url>
+        </repository>
+        <repository>
+          <id>public-mvn-repo-releases</id>
+          <url>https://github.com/novoda/public-mvn-repo/raw/master/releases</url>
+        </repository>
+      </repositories>
+    </profile>
+</profiles>
