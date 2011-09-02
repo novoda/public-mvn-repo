@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.novoda</groupId>
+		<artifactId>team</artifactId>
+		<version>0.1.2</version>
+		<relativePath></relativePath>
+	</parent>
+	<groupId>com.facebook.android</groupId>
+	<artifactId>sdk</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+	<name>facebook android sdk</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<android.version>2.2.1</android.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>${android.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>net.iharder</groupId>
+		    <artifactId>base64</artifactId>
+		    <version>2.3.8</version>
+		</dependency>
+	</dependencies>
+
+</project>
