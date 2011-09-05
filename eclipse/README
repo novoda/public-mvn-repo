@@ -1,0 +1,10 @@
+This files are work in progress to get a common style for everyone
+
+clean_code_style_templates.xml  :
+this file is a specification of the normal eclipse 3.7 templates with the following changes 
+- 2 chars instead of tabs
+- removed 1 empty line between every single member variable
+
+nice this to have is a red color for comments, to do that go to ...
+
+
