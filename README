@@ -1,21 +1,38 @@
-Maven repository for open source project of novoda
+======================================
+Use the repo with maven
+======================================
 
 if you want to use the jars in this repository you need to set up a profile of maven in ~/.m2/settings.xml
 to do that simply copy the file in the public-mvn-repo/poms/settings.xml
 
-Note to add releases
+======================================
+Manually download of files
+======================================
+
+go to the file from github
+change the url bit "blob" to "raw"
+
+example :
+from
+https://github.com/novoda/public-mvn-repo/blob/master/releases/com/novoda/httpservice/core/1.2/core-1.2.jar
+to
+https://github.com/novoda/public-mvn-repo/raw/master/releases/com/novoda/httpservice/core/1.2/core-1.2.jar
+
+======================================
+Making releases available to others
+======================================
 
 1. manually release a jar to this repo: 
 
-clone the repo to folder ??? 
+clone the repo to folder X
 run this command for example
 
 mvn deploy:deploy-file -DgroupId=com.novoda -DartifactId=sqliteprovider -Dversion=0.0.1 -Dpackaging=jar 
-   -Dfile="sqliteprovider-0.0.1.jar" -Durl=file:???/releases/
+   -Dfile="sqliteprovider-0.0.1.jar" -Durl=file:X/releases/
 
 2. release a maven project
 
-mvn -DaltDeploymentRepository=snapshot-repo::default::file:???/releases clean deploy
+mvn -DaltDeploymentRepository=snapshot-repo::default::file:X/releases clean deploy
 
 
 
