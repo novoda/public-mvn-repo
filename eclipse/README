@@ -1,10 +1,26 @@
-This files are work in progress to get a common style for everyone
+======================================
+Eclipse styles and other files
+======================================
 
-clean_code_style_templates.xml  :
+NOTE : this is note definitive, try it out and add what you think is useful to have
+
+======================================
+clean_code_style_templates.xml
+======================================
 this file is a specification of the normal eclipse 3.7 templates with the following changes 
 - 2 chars instead of tabs
 - removed 1 empty line between every single member variable
 
-nice this to have is a red color for comments, to do that go to ...
+it is nice to have red comments, unfortunately can be done only manually
+go to Window -> preferences -> Syntax Coloring
 
+
+======================================
+luigi_shortcut_configuration.csv
+======================================
+my personl configuration of shortcuts
+
+- ctrl+J  : run unit test (replace incremental search though)
+- ctrl+up + ctrl+up : copy selected line up
+- ctrl+down + ctrl+down : copy selected line down
 
