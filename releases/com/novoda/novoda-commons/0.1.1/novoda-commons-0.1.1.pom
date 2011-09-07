@@ -9,8 +9,8 @@
 		<relativePath></relativePath>
 	</parent>
 	<groupId>com.novoda</groupId>
-	<artifactId>commons</artifactId>
-	<version>0.1</version>
+	<artifactId>novoda-commons</artifactId>
+	<version>0.1.1</version>
 	<packaging>jar</packaging>
 	<name>Novoda Commons</name>
 
