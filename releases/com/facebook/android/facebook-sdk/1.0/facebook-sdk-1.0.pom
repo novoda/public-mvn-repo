@@ -9,7 +9,7 @@
 		<relativePath></relativePath>
 	</parent>
 	<groupId>com.facebook.android</groupId>
-	<artifactId>sdk</artifactId>
+	<artifactId>facebook-sdk</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 	<name>facebook android sdk</name>

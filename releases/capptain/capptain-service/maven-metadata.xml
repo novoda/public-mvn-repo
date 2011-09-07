@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>capptain</groupId>
-  <artifactId>service</artifactId>
+  <artifactId>capptain-service</artifactId>
   <versioning>
     <release>1.0</release>
     <versions>
       <version>1.0</version>
     </versions>
-    <lastUpdated>20110902170546</lastUpdated>
+    <lastUpdated>20110907100636</lastUpdated>
   </versioning>
 </metadata>
