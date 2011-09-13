@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>android-release Maven Plugin</name>
+      <prefix>android-release</prefix>
+      <artifactId>android-release</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
