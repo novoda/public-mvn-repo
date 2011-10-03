@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.novoda.httpactors</groupId>
+  <artifactId>httpactors-parent</artifactId>
+  <version>2.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20111003.152203</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20111003152203</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.0.0-20111003.152203-1</value>
+        <updated>20111003152203</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
