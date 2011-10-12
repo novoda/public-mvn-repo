@@ -8,7 +8,7 @@ NOTE : this is note definitive, try it out and add what you think is useful to h
 clean_code_style_templates.xml
 ======================================
 this file is a specification of the normal eclipse 3.7 templates with the following changes 
-- 2 chars instead of tabs
+- 4 chars instead of tabs
 - removed 1 empty line between every single member variable
 
 it is nice to have red comments, unfortunately can be done only manually
