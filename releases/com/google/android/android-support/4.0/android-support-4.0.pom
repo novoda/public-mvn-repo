@@ -4,5 +4,5 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.android</groupId>
   <artifactId>android-support</artifactId>
-  <version>4</version>
+  <version>4.0</version>
 </project>
