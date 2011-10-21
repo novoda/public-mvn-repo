@@ -13,6 +13,11 @@
   <name>android</name>
   <packaging>pom</packaging>
 
+  <properties>
+    <android.version>2.3.3</android.version>
+    <android.sdk.platform>10</android.sdk.platform>
+  </properties>
+
   <build>
     <finalName>${project.artifactId}</finalName>
     <pluginManagement>
@@ -43,7 +48,7 @@
         <artifactId>android-maven-plugin</artifactId>
         <configuration>
           <sdk>
-            <platform>8</platform>
+            <platform>${android.sdk.platform}</platform>
           </sdk>
           <deleteConflictingFiles>true</deleteConflictingFiles>
           <undeployBeforeDeploy>true</undeployBeforeDeploy>
