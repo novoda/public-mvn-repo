@@ -16,7 +16,6 @@
   <properties>
     <android.version>2.3.3</android.version>
     <android.sdk.platform>10</android.sdk.platform>
-    <android.manifest.debuggable>true</android.manifest.debuggable>
   </properties>
 
   <build>
@@ -64,6 +63,7 @@
             Is already the default version
             <versionName>${project.version}</versionName>            
              -->
+            <debuggable>true</debuggable>
             <versionCodeAutoIncrement>true</versionCodeAutoIncrement>
           </manifest>
         </configuration>
@@ -157,6 +157,9 @@
               <sign>
                 <debug>false</debug>
               </sign>
+              <manifest>
+                <debuggable>false</debuggable>
+              </manifest>
             </configuration>
           </plugin>
           <plugin>
