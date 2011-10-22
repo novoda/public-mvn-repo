@@ -124,9 +124,6 @@
     </profile>
     <profile>
       <id>release</id>
-      <properties>
-        <android.manifest.debuggable>false</android.manifest.debuggable>
-      </properties>
       <build>
         <plugins>
           <plugin>
