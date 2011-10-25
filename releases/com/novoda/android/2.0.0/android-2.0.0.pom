@@ -50,6 +50,7 @@
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
+	<version>3.0.0-alpha-13</version>
         <configuration>
           <sdk>
             <platform>${android.sdk.platform}</platform>
@@ -63,16 +64,11 @@
             Is already the default version
             <versionName>${project.version}</versionName>            
              -->
-            <manifestDebuggable>true</manifestDebuggable>
+            <debuggable>true</debuggable>
             <versionCodeAutoIncrement>true</versionCodeAutoIncrement>
           </manifest>
         </configuration>
         <extensions>true</extensions>
-      </plugin>
-      <plugin>
-        <groupId>com.giago.maven</groupId>
-        <artifactId>android-manifest-maven-plugin</artifactId>
-        <version>1.2</version>
       </plugin>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
@@ -152,13 +148,13 @@
           <plugin>
             <groupId>com.jayway.maven.plugins.android.generation2</groupId>
             <artifactId>android-maven-plugin</artifactId>
-            <inherited>true</inherited>
+            <version>3.0.0-alpha-13</version>
             <configuration>
               <sign>
                 <debug>false</debug>
               </sign>
               <manifest>
-                <manifestDebuggable>false</manifestDebuggable>
+                <debuggable>false</debuggable>
               </manifest>
             </configuration>
           </plugin>
