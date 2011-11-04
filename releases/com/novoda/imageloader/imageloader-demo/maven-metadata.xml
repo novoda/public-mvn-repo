@@ -13,7 +13,8 @@
       <version>1.3.10</version>
       <version>1.3.11</version>
       <version>1.3.12</version>
+      <version>1.3.13-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20111027105817</lastUpdated>
+    <lastUpdated>20111104140743</lastUpdated>
   </versioning>
 </metadata>

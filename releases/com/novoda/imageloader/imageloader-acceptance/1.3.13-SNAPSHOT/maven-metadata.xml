@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.novoda.imageloader</groupId>
+  <artifactId>imageloader-acceptance</artifactId>
+  <version>1.3.13-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20111104.140951</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20111104140951</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>apk</extension>
+        <value>1.3.13-20111104.140951-1</value>
+        <updated>20111104140951</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.3.13-20111104.140951-1</value>
+        <updated>20111104140951</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.3.13-20111104.140951-1</value>
+        <updated>20111104140951</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
