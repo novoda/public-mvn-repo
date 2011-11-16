@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.novoda.location</groupId>
+  <artifactId>novocation-parent</artifactId>
+  <versioning>
+    <release>1.0-beta</release>
+    <versions>
+      <version>1.0-beta</version>
+    </versions>
+    <lastUpdated>20111116131046</lastUpdated>
+  </versioning>
+</metadata>
