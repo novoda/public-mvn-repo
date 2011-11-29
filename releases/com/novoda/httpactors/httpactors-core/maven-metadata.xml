@@ -3,11 +3,12 @@
   <groupId>com.novoda.httpactors</groupId>
   <artifactId>httpactors-core</artifactId>
   <versioning>
-    <release>2.0.1</release>
+    <release>2.0.2-followRedirects</release>
     <versions>
       <version>2.0.0</version>
       <version>2.0.1</version>
+      <version>2.0.2-followRedirects</version>
     </versions>
-    <lastUpdated>20111004100350</lastUpdated>
+    <lastUpdated>20111129150305</lastUpdated>
   </versioning>
 </metadata>
