@@ -68,7 +68,6 @@
             <debuggable>true</debuggable>
             <versionCodeAutoIncrement>true</versionCodeAutoIncrement>
           </manifest>
-	  <proguard><skip>false</skip></proguard>
         </configuration>
         <extensions>true</extensions>
       </plugin>
