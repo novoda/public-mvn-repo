@@ -88,5 +88,14 @@ mvn release:prepare release:perform -Plocalrelease
 6: Commit and push the changes in public-mvn-repo on your machine
 
 
+======================================
+Manually deploy a jar in the repo
+======================================
 
+1. clone the public-maven-repo
+2. run the command :
+
+mvn deploy:deploy-file -DgroupId=com.paypal.android -DartifactId=paypal-mpl -Dversion=1.5.5.44 -Dpackaging=jar -Dfile=x/PayPal_MPL.jar -Durl=file://x/public-mvn-repo/releases/
+
+3. push the changes
 
