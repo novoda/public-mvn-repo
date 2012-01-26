@@ -3,10 +3,11 @@
   <groupId>com.adx.tag</groupId>
   <artifactId>adx-tag</artifactId>
   <versioning>
-    <release>1.0</release>
+    <release>2.1-beta</release>
     <versions>
       <version>1.0</version>
+      <version>2.1-beta</version>
     </versions>
-    <lastUpdated>20111003150407</lastUpdated>
+    <lastUpdated>20120126141726</lastUpdated>
   </versioning>
 </metadata>
