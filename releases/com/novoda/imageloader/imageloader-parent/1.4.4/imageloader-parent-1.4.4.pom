@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.novoda</groupId>
+    <artifactId>android</artifactId>
+    <version>2.0.1</version>
+  </parent>
+  <groupId>com.novoda.imageloader</groupId>
+  <artifactId>imageloader-parent</artifactId>
+  <version>1.4.4</version>
+  <name>imageloader-parent</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <android.version>2.2.1</android.version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>public-mvn-repo-releases</id>
+      <url>https://github.com/novoda/public-mvn-repo/raw/master/releases</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>local-public-mvn-repo</id>
+      <name>local clone of https://github.com/novoda/public-mvn-repo</name>
+      <url>${local.public.mvn.repo}</url>
+    </repository>
+  </distributionManagement>
+
+  <scm>
+    <url>http://github.com/novoda/ImageLoader/tree/${scm.branch}</url>
+    <connection>scm:git:git://github.com/novoda/ImageLoader.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/novoda/ImageLoader.git</developerConnection>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>Apache 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>core</module>
+    <module>demo</module>
+    <module>acceptance</module>
+  </modules>
+
+</project>
