@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.novoda.location</groupId>
+    <artifactId>novocation-parent</artifactId>
+    <version>1.0.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>novocation-simple</artifactId>
+  <name>novocation-simple</name>
+  <packaging>apk</packaging>
+
+  <properties>
+    <eclipse.excludeArtifactIds>android,commons-codec,commons-logging,httpclient,httpcore,json,opengl-api,xmlParserAPIs,xpp3,novocation-core</eclipse.excludeArtifactIds>
+    <android.version>3.2_r1</android.version>
+    <google.android.maps.version>13_r1</google.android.maps.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>${android.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.novoda.location</groupId>
+      <artifactId>novocation-core</artifactId>
+      <version>1.0.7-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+  </build>
+
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.novoda.location</groupId>
+  <artifactId>novocation-core</artifactId>
+  <version>1.0.7-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20120308.010617</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20120308010617</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0.7-20120308.010617-1</value>
+        <updated>20120308010617</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.7-20120308.010617-1</value>
+        <updated>20120308010617</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
