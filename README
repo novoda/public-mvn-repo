@@ -87,6 +87,13 @@ mvn release:prepare release:perform -Plocalrelease
 
 6: Commit and push the changes in public-mvn-repo on your machine
 
+======================================
+Making local releases 
+======================================
+
+Run this command from the projects target/checkout/ directory:
+
+mvn clean install deploy:deploy -Plocalrelease  
 
 ======================================
 Manually deploy a jar in the repo
