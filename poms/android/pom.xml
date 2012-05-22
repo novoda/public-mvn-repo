@@ -9,14 +9,14 @@
   </parent>
   <groupId>com.novoda</groupId>
   <artifactId>android</artifactId>
-  <version>2.0.1</version>
+  <version>2.0.2</version>
   <name>android</name>
   <packaging>pom</packaging>
 
   <properties>
     <android.version>2.3.3</android.version>
     <android.sdk.platform>10</android.sdk.platform>
-    <android.maven.plugin.version>3.0.0</android.maven.plugin.version>
+    <android.maven.plugin.version>3.2.0</android.maven.plugin.version>
   </properties>
 
   <build>
