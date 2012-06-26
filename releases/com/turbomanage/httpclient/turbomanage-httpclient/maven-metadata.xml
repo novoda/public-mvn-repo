@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.turbomanage.httpclient</groupId>
+  <artifactId>turbomanage-httpclient</artifactId>
+  <versioning>
+    <release>0.85</release>
+    <versions>
+      <version>0.85</version>
+    </versions>
+    <lastUpdated>20120626103125</lastUpdated>
+  </versioning>
+</metadata>
