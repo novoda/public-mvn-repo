@@ -3,7 +3,7 @@
   <groupId>com.novoda.location</groupId>
   <artifactId>novocation-demo</artifactId>
   <versioning>
-    <release>1.0.8</release>
+    <release>2.0-ALPHA</release>
     <versions>
       <version>1.0-beta</version>
       <version>1.0-beta2</version>
@@ -18,7 +18,9 @@
       <version>1.0.7-SNAPSHOT</version>
       <version>1.0.7</version>
       <version>1.0.8</version>
+      <version>2.0-ALPHA</version>
+      <version>2.0-ALPHA-1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20120424123752</lastUpdated>
+    <lastUpdated>20121121162140</lastUpdated>
   </versioning>
 </metadata>
