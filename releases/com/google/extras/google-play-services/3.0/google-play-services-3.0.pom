@@ -73,6 +73,13 @@
       <version>2.2_r3</version>
       <scope>provided</scope>
   </dependency>
+
+  <dependency>
+      <groupId>com.google.extras</groupId>
+      <artifactId>google-play-services-src</artifactId>
+      <version>3.0</version>
+      <scope>provided</scope>
+  </dependency>
 </dependencies>
 
 </project>
