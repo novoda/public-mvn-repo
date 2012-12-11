@@ -30,14 +30,25 @@ The following steps will help you in publishing a new relase of a project onto t
 
 2: Add this to your settings file in .m2/settings.xml, changing the <local.public.mvn.repo> to point to where you cloned this repo on your system
 
-<profiles>
-	<profile>
-		<id>localrelease</id>
-		<properties>
-			<local.public.mvn.repo>file:/home/luigi/dev/prj/com.novoda/public-mvn-repo/releases</local.public.mvn.repo>
-		</properties>
-	</profile>
-</profiles>
+	<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+		<profiles>
+			<profile>
+				<id>localrelease</id>
+					<properties>
+						<local.public.mvn.repo>file:/Users/Peter/github/public-mvn-repo/releases</local.public.mvn.repo>
+					</properties>
+			</profile>
+		</profiles>
+
+		<activeProfiles>
+			<activeProfile>localrelease</activeProfile>
+		</activeProfiles>
+	  </settings>
+
+
 
 
 3: Add the following to the parent pom.xml of your project BUT change the github project url:
@@ -102,7 +113,9 @@ Manually deploy a jar in the repo
 1. clone the public-maven-repo
 2. run the command :
 
-mvn deploy:deploy-file -DgroupId=com.paypal.android -DartifactId=paypal-mpl -Dversion=1.5.5.44 -Dpackaging=jar -Dfile=x/PayPal_MPL.jar -Durl=file://x/public-mvn-repo/releases/
+	mvn deploy:deploy-file -DgroupId=com.paypal.android -DartifactId=paypal-mpl -Dversion=1.5.5.44 -Dpackaging=jar -Dfile=x/PayPal_MPL.jar -Durl=file://x/public-mvn-repo/releases/
+example 
+	mvn deploy:deploy-file -DgroupId=com.novoda -DartifactId=reporting -Dversion=1.1.0 -Dpackaging=pom -Dfile=poms/reporting/pom.xml -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
 
 3. push the changes
 

@@ -3,6 +3,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.android</groupId>
-  <artifactId>support</artifactId>
-  <version>13</version>
+  <artifactId>support-v4</artifactId>
+  <version>r11</version>
 </project>
