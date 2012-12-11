@@ -14,8 +14,8 @@
   <packaging>pom</packaging>
 
   <properties>
-    <android.version>2.3.3</android.version>
-    <android.sdk.platform>10</android.sdk.platform>
+    <android.version>2.2</android.version>
+    <android.sdk.platform>8</android.sdk.platform>
     <android.maven.plugin.version>3.4.1</android.maven.plugin.version>
   </properties>
 
