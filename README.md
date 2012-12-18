@@ -34,65 +34,65 @@ The following steps will help you in publishing a new relase of a project onto t
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
-		<profiles>
-			<profile>
-				<id>localrelease</id>
-					<properties>
-						<local.public.mvn.repo>file:/Users/Peter/github/public-mvn-repo/releases</local.public.mvn.repo>
-					</properties>
-			</profile>
-		</profiles>
+	  <profiles>
+	    <profile>
+	      <id>localrelease</id>
+	        <properties>
+			  <local.public.mvn.repo>file:/Users/Peter/github/public-mvn-repo/releases</local.public.mvn.repo>
+			</properties>
+		</profile>
+	  </profiles>
 
-		<activeProfiles>
-			<activeProfile>localrelease</activeProfile>
-		</activeProfiles>
-	  </settings>
+	  <activeProfiles>
+		<activeProfile>localrelease</activeProfile>
+	  </activeProfiles>
+	</settings>
 
 
 
 
 3: Add the following to the parent pom.xml of your project BUT change the github project url:
 
-  <scm>
-    <url>http://github.com/novoda/Commons/tree/${scm.branch}</url>
-    <connection>scm:git:git://github.com/novoda/Commons.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/novoda/Commons.git</developerConnection>
-  </scm>
+	<scm>
+	    <url>http://github.com/novoda/Commons/tree/${scm.branch}</url>
+	    <connection>scm:git:git://github.com/novoda/Commons.git</connection>
+	    <developerConnection>scm:git:ssh://git@github.com/novoda/Commons.git</developerConnection>
+	  </scm>
 
-  <distributionManagement>
-    <repository>
-      <id>local-public-mvn-repo</id>
-      <name>local clone of https://github.com/novoda/public-mvn-repo</name>
-      <url>${local.public.mvn.repo}</url>
-    </repository>
-  </distributionManagement>
+	<distributionManagement>
+	    <repository>
+	      <id>local-public-mvn-repo</id>
+	      <name>local clone of https://github.com/novoda/public-mvn-repo</name>
+	      <url>${local.public.mvn.repo}</url>
+	    </repository>
+	</distributionManagement>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-scm-plugin</artifactId>
-        <configuration>
-          <scmVersionType>branch</scmVersionType>
-          <scmVersion>${scm.branch}</scmVersion>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-release-plugin</artifactId>
-        <configuration>
-          <autoVersionSubmodules>true</autoVersionSubmodules>
-          <useReleaseProfile>false</useReleaseProfile>
-        </configuration>
-        <goals />
-      </plugin>
-    </plugins>
-  </build>
+	<build>
+	    <plugins>
+	      <plugin>
+	        <artifactId>maven-scm-plugin</artifactId>
+	        <configuration>
+	          <scmVersionType>branch</scmVersionType>
+	          <scmVersion>${scm.branch}</scmVersion>
+	        </configuration>
+	      </plugin>
+	      <plugin>
+	        <artifactId>maven-release-plugin</artifactId>
+	        <configuration>
+	          <autoVersionSubmodules>true</autoVersionSubmodules>
+	          <useReleaseProfile>false</useReleaseProfile>
+	        </configuration>
+	        <goals />
+	      </plugin>
+	    </plugins>
+	</build>
 
 
 4: Ensure all modules in your project have their version on SNAPSHOT
 
 5: Run this command from the root of your project BUT ensure everything is commited and pushed upstream from your local repo:
 
-mvn release:prepare release:perform -Plocalrelease
+	mvn release:prepare release:perform -Plocalrelease
 
 (This will run the tests in your prject, increment the version and publish a jar in your local public-mvn-repo repo)
 
@@ -104,18 +104,19 @@ Making local releases
 
 Run this command from the projects target/checkout/ directory:
 
-mvn clean install deploy:deploy -Plocalrelease  
+	mvn clean install deploy:deploy -Plocalrelease  
 
 ======================================
 Manually deploy a jar in the repo
 ======================================
 
 1. clone the public-maven-repo
-2. run the command :
+2. run the command
 
-	mvn deploy:deploy-file -DgroupId=com.paypal.android -DartifactId=paypal-mpl -Dversion=1.5.5.44 -Dpackaging=jar -Dfile=x/PayPal_MPL.jar -Durl=file://x/public-mvn-repo/releases/
+<pre><code>mvn deploy:deploy-file -DgroupId=com.paypal.android -DartifactId=paypal-mpl -Dversion=1.5.5.44 -Dpackaging=jar -Dfile=x/PayPal_MPL.jar -Durl=file://x/public-mvn-repo/releases/</code></pre>
+
 example 
-	mvn deploy:deploy-file -DgroupId=com.novoda -DartifactId=reporting -Dversion=1.1.0 -Dpackaging=pom -Dfile=poms/reporting/pom.xml -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
+<pre><code>mvn deploy:deploy-file -DgroupId=com.novoda -DartifactId=reporting -Dversion=1.1.0 -Dpackaging=pom -Dfile=poms/reporting/pom.xml -Durl=file:///Users/Peter/github/public-mvn-repo/releases/</code></pre>
 
 3. push the changes
 
