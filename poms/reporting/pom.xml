@@ -6,12 +6,12 @@
   <parent>
     <groupId>com.novoda</groupId>
     <artifactId>android</artifactId>
-    <version>2.0.3</version>
+    <version>2.0.4</version>
   </parent>
 
   <groupId>com.novoda</groupId>
   <artifactId>reporting</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <name>reporting</name>
   <packaging>pom</packaging>
 
@@ -85,6 +85,16 @@
               <configLocation>${reporting.checkstyle.rules}</configLocation>
             </configuration>
         </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.5.2</version>
+        <configuration>
+          <xmlOutput>true</xmlOutput>
+          <onlyAnalyze>${reporting.package.analyze}</onlyAnalyze>
+          <excludeFilterFile>${reporting.findbugs.exclude}</excludeFilterFile>
+        </configuration>
+      </plugin>
       </plugins>
     </pluginManagement>
   </build>
@@ -94,17 +104,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
-        <version>2.5.1</version>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>findbugs-maven-plugin</artifactId>
-        <version>2.5.1</version>
-        <configuration>
-          <xmlOutput>true</xmlOutput>
-          <onlyAnalyze>${reporting.package.analyze}</onlyAnalyze>
-          <excludeFilterFile>${reporting.findbugs.exclude}</excludeFilterFile>
-        </configuration>
+        <version>2.5.2</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
