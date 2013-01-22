@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.novoda</groupId>
+  <artifactId>team</artifactId>
+  <version>1.5</version>
+  <name>team</name>
+  <description>team</description>
+  <packaging>pom</packaging>
+
+  <parent>    	
+    <groupId>org.sonatype.oss</groupId>	  	
+    <artifactId>oss-parent</artifactId>	  	
+    <version>7</version>	
+  </parent>
+   
+  <properties>
+    <scm.branch>master</scm.branch>
+    <junit.version>4.8.2</junit.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-scm-plugin</artifactId>
+          <version>1.4</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.3.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>2.8</version>
+        <configuration>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+          <addGroupIdToProjectName>true</addGroupIdToProjectName>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.2.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-scm-plugin</artifactId>
+        <configuration>
+          <scmVersionType>branch</scmVersionType>
+          <scmVersion>${scm.branch}</scmVersion>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
