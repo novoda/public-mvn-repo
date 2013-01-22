@@ -4,11 +4,17 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.novoda</groupId>
   <artifactId>team</artifactId>
-  <version>1.4</version>
+  <version>1.5</version>
   <name>team</name>
   <description>team</description>
   <packaging>pom</packaging>
 
+  <parent>    	
+    <groupId>org.sonatype.oss</groupId>	  	
+    <artifactId>oss-parent</artifactId>	  	
+    <version>7</version>	
+  </parent>
+   
   <properties>
     <scm.branch>master</scm.branch>
     <junit.version>4.8.2</junit.version>
