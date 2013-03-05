@@ -113,10 +113,37 @@ Manually deploy a jar in the repo
 1. clone the public-maven-repo
 2. run the command
 
-<pre><code>mvn deploy:deploy-file -DgroupId=com.paypal.android -DartifactId=paypal-mpl -Dversion=1.5.5.44 -Dpackaging=jar -Dfile=x/PayPal_MPL.jar -Durl=file://x/public-mvn-repo/releases/</code></pre>
+<pre><code>
+ mvn deploy:deploy-file 
+ -DgroupId=com.your.group.id 
+ -DartifactId=your-artifact-id 
+ -Dversion=1.0.0.0 
+ -Dpackaging=jar 
+ -Dfile=path/to/file/jar_name.jar 
+ -Durl=file://path/to/local/cloned/repo/public-mvn-repo/releases/
+</code></pre>
 
-example 
-<pre><code>mvn deploy:deploy-file -DgroupId=com.novoda -DartifactId=reporting -Dversion=1.1.0 -Dpackaging=pom -Dfile=poms/reporting/pom.xml -Durl=file:///Users/Peter/github/public-mvn-repo/releases/</code></pre>
+jar example
+<pre><code>
+  mvn deploy:deploy-file 
+  -DgroupId=com.omniture 
+  -DartifactId=omniture 
+  -Dversion=1.0.0 
+  -Dpackaging=jar 
+  -Dfile=omniture_app_measurement.jar 
+  -Durl=file:////Users/Blundell/Developer/git_repo/public-mvn-repo/releases/
+</code></pre>
+
+pom example 
+<pre><code>
+ mvn deploy:deploy-file 
+ -DgroupId=com.novoda 
+ -DartifactId=reporting 
+ -Dversion=1.1.0 -Dpackaging=pom 
+ -Dfile=poms/reporting/pom.xml 
+ -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
+</code></pre>
 
 3. push the changes
+
 
