@@ -3,14 +3,15 @@
   <groupId>com.novoda</groupId>
   <artifactId>reporting</artifactId>
   <versioning>
-    <release>1.2.2</release>
+    <release>1.2.3</release>
     <versions>
       <version>1.0.0</version>
       <version>1.1.0</version>
       <version>1.2.0</version>
       <version>1.2.1</version>
       <version>1.2.2</version>
+      <version>1.2.3</version>
     </versions>
-    <lastUpdated>20130228155610</lastUpdated>
+    <lastUpdated>20130416093512</lastUpdated>
   </versioning>
 </metadata>
