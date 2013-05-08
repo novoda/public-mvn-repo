@@ -144,6 +144,17 @@ pom example
  -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
 </code></pre>
 
+apklib example (adding pomFile parameter with location of relevant pom is important otherwise deployed pom will be broken due to missing dependencies)
+<pre><code>
+  mvn deploy:deploy-file -Dfile=/Users/Peter/github/ShowcaseView/library/target/showcaseview-library-3.1.apklib 
+  -DpomFile=/Users/Peter/github/ShowcaseView/library/pom.xml 
+  -DgroupId=com.github.espiandev 
+  -DartifactId=showcaseview-library 
+  -Dversion=3.1 
+  -Dpackaging=apklib 
+  -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
+</code></pre>
+
 3. push the changes
 
 
