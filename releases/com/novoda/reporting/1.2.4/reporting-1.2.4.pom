@@ -16,8 +16,8 @@
   <properties>
     <reporting.directory>team-props</reporting.directory>
     <reporting.package.analyze>com.novoda.*</reporting.package.analyze>
-    <reporting.findbugs.exclude>{reporting.directory}/findbugs-exclude.xml</reporting.findbugs.exclude>
-    <reporting.checkstyle.rules>{reporting.directory}/checkstyle.xml</reporting.checkstyle.rules>
+    <reporting.findbugs.exclude>${reporting.directory}/findbugs-exclude.xml</reporting.findbugs.exclude>
+    <reporting.checkstyle.rules>${reporting.directory}/checkstyle.xml</reporting.checkstyle.rules>
   </properties>
 
   <repositories>
