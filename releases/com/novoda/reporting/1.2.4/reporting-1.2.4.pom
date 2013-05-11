@@ -1,0 +1,160 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.novoda</groupId>
+    <artifactId>android</artifactId>
+    <version>2.0.7</version>
+  </parent>
+
+  <groupId>com.novoda</groupId>
+  <artifactId>reporting</artifactId>
+  <version>1.2.4</version>
+  <name>reporting</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <reporting.directory>team-props</reporting.directory>
+    <reporting.package.analyze>com.novoda.*</reporting.package.analyze>
+    <reporting.findbugs.exclude>${reporting.directory}/findbugs-exclude.xml</reporting.findbugs.exclude>
+    <reporting.checkstyle.rules>${reporting.directory}/checkstyle.xml</reporting.checkstyle.rules>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>novoda-repo</id>
+      <url>https://github.com/novoda/public-mvn-repo/raw/master/releases</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.novoda</groupId>
+      <artifactId>novoda-checkstyle-checks</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <versionRange>[1.0.0,)</versionRange>
+                    <goals>
+                      <goal>enforce</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore />
+                  </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>cobertura-maven-plugin</artifactId>
+          <version>2.5.1</version>
+          <configuration>
+            <formats>
+              <format>xml</format>
+            </formats>
+            <check />
+          </configuration>
+          <executions>
+            <execution>
+              <phase>clean</phase>
+              <goals>
+                <goal>cobertura</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.12.4</version>
+          <configuration>
+            <includes>
+              <include>**/*Test*.java</include>
+              <include>**/*Should.java</include>
+            </includes>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>2.9.1</version>
+          <dependencies>
+            <dependency>
+              <groupId>com.novoda</groupId>
+              <artifactId>novoda-checkstyle-checks</artifactId>
+            </dependency>
+          </dependencies>
+          <configuration>
+            <configLocation>${reporting.checkstyle.rules}</configLocation>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>findbugs-maven-plugin</artifactId>
+          <version>2.5.2</version>
+          <configuration>
+            <xmlOutput>true</xmlOutput>
+            <onlyAnalyze>${reporting.package.analyze}</onlyAnalyze>
+            <excludeFilterFile>${reporting.findbugs.exclude}</excludeFilterFile>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.7</version>
+          <executions>
+            <execution>
+              <id>load-reporting-exclusions</id>
+              <configuration>
+                <target>
+                  <delete dir="${reporting.directory}" />
+                  <mkdir dir="${reporting.directory}" />
+                  <get src="https://github.com/novoda/reporting-exclusion/archive/master.zip" dest="${reporting.directory}" />
+                  <unzip src="${reporting.directory}/master.zip" dest="${reporting.directory}">
+                    <mapper type="flatten" />
+                  </unzip>
+                  <delete file="${reporting.directory}/master.zip" />
+                  <delete dir="${reporting.directory}/reporting-exclusion-master" />
+                </target>
+              </configuration>
+              <goals>
+                <goal>run</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.5.2</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>2.7.1</version>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>

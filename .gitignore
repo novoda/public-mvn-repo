@@ -1,2 +1,6 @@
 # MAC hidden files
 *.DS_Store
+
+*.iml
+.idea
+target
