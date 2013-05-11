@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.novoda.merlin</groupId>
+  <artifactId>merlin-demo</artifactId>
+  <version>0.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20130511.170621</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20130511170621</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>apk</extension>
+        <value>0.2-20130511.170621-1</value>
+        <updated>20130511170621</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.2-20130511.170621-1</value>
+        <updated>20130511170621</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.2-20130511.170621-1</value>
+        <updated>20130511170621</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
