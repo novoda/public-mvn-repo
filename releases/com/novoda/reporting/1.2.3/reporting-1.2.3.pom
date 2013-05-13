@@ -4,20 +4,20 @@
   <parent>
     <groupId>com.novoda</groupId>
     <artifactId>android</artifactId>
-    <version>2.0.7</version>
+    <version>2.0.6</version>
   </parent>
 
   <groupId>com.novoda</groupId>
   <artifactId>reporting</artifactId>
-  <version>1.2.4</version>
+  <version>1.2.3</version>
   <name>reporting</name>
   <packaging>pom</packaging>
 
   <properties>
-    <reporting.directory>team-props</reporting.directory>
+    <reporting.directory>team-props/reporting-exclusion</reporting.directory>
     <reporting.package.analyze>com.novoda.*</reporting.package.analyze>
-    <reporting.findbugs.exclude>${reporting.directory}/findbugs-exclude.xml</reporting.findbugs.exclude>
-    <reporting.checkstyle.rules>${reporting.directory}/checkstyle.xml</reporting.checkstyle.rules>
+    <reporting.findbugs.exclude>{reporting.directory}/findbugs-exclude.xml</reporting.findbugs.exclude>
+    <reporting.checkstyle.rules>{reporting.directory}/checkstyle.xml</reporting.checkstyle.rules>
   </properties>
 
   <repositories>
