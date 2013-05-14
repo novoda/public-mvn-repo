@@ -3,7 +3,7 @@
   <groupId>com.novoda</groupId>
   <artifactId>reporting</artifactId>
   <versioning>
-    <release>1.2.4</release>
+    <release>1.2.5</release>
     <versions>
       <version>1.0.0</version>
       <version>1.1.0</version>
@@ -12,7 +12,8 @@
       <version>1.2.2</version>
       <version>1.2.3</version>
       <version>1.2.4</version>
+      <version>1.2.5</version>
     </versions>
-    <lastUpdated>20130510175135</lastUpdated>
+    <lastUpdated>20130514113416</lastUpdated>
   </versioning>
 </metadata>
