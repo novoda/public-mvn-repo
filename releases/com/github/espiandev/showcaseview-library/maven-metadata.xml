@@ -3,12 +3,12 @@
   <groupId>com.github.espiandev</groupId>
   <artifactId>showcaseview-library</artifactId>
   <versioning>
-    <release>3.1.1</release>
+    <release>3.1.2</release>
     <versions>
       <version>3.1</version>
       <version>3.1.1</version>
       <version>3.1.2</version>
     </versions>
-    <lastUpdated>20130522154244</lastUpdated>
+    <lastUpdated>20130522155241</lastUpdated>
   </versioning>
 </metadata>
