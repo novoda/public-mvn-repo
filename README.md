@@ -155,7 +155,7 @@ Manually deploy a jar in the repo
 	  -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
 	</code></pre>
 	
-	You will also release parent pom of the apklib in order for project to resolve dependencies
+	You will also need to release parent pom of the apklib in order for project to resolve dependencies
 
 3. push the changes
 
