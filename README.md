@@ -134,6 +134,18 @@ Manually deploy a jar in the repo
 	  -Durl=file:////Users/Blundell/Developer/git_repo/public-mvn-repo/releases/
 	</code></pre>
 	
+	jar source example
+	<pre><code>
+	 mvn deploy:deploy-file 
+	 -DgroupId=com.novoda 
+	 -DartifactId=sexp 
+	 -Dversion=1.0.0-SNAPSHOT 
+	 -Dpackaging=java-source 
+	 -Dfile=path/to/file/jar_name-1.0.0-javadoc.jar 
+	 -Durl=file://path/to/local/cloned/repo/public-mvn-repo/releases/ 
+	 -DgeneratePom=false
+	</code></pre>
+	
 	pom example 
 	<pre><code>
 	 mvn deploy:deploy-file 
