@@ -3,11 +3,12 @@
   <groupId>com.google.android</groupId>
   <artifactId>support-v4</artifactId>
   <versioning>
-    <release>r13</release>
+    <release>r13-novoda</release>
     <versions>
       <version>r11</version>
       <version>r13</version>
+      <version>r13-novoda</version>
     </versions>
-    <lastUpdated>20130305102007</lastUpdated>
+    <lastUpdated>20130703111047</lastUpdated>
   </versioning>
 </metadata>
