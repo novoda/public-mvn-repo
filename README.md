@@ -113,47 +113,61 @@ Manually deploy a jar in the repo
 1. clone the public-maven-repo
 2. run the command
 
-<pre><code>
- mvn deploy:deploy-file 
- -DgroupId=com.your.group.id 
- -DartifactId=your-artifact-id 
- -Dversion=1.0.0.0 
- -Dpackaging=jar 
- -Dfile=path/to/file/jar_name.jar 
- -Durl=file://path/to/local/cloned/repo/public-mvn-repo/releases/
-</code></pre>
-
-jar example
-<pre><code>
-  mvn deploy:deploy-file 
-  -DgroupId=com.omniture 
-  -DartifactId=omniture 
-  -Dversion=1.0.0 
-  -Dpackaging=jar 
-  -Dfile=omniture_app_measurement.jar 
-  -Durl=file:////Users/Blundell/Developer/git_repo/public-mvn-repo/releases/
-</code></pre>
-
-pom example 
-<pre><code>
- mvn deploy:deploy-file 
- -DgroupId=com.novoda 
- -DartifactId=reporting 
- -Dversion=1.1.0 -Dpackaging=pom 
- -Dfile=poms/reporting/pom.xml 
- -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
-</code></pre>
-
-apklib example (Adding pomFile parameter with location of relevant pom is important otherwise deployed pom will be broken due to missing dependencies. Also you will need to release parent pom in order to get apklib working, or you get error with parent not resolved)
-<pre><code>
-  mvn deploy:deploy-file -Dfile=/Users/Peter/github/ShowcaseView/library/target/showcaseview-library-3.1.apklib 
-  -DpomFile=/Users/Peter/github/ShowcaseView/library/pom.xml 
-  -DgroupId=com.github.espiandev 
-  -DartifactId=showcaseview-library 
-  -Dversion=3.1 
-  -Dpackaging=apklib 
-  -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
-</code></pre>
+	<pre><code>
+	 mvn deploy:deploy-file 
+	 -DgroupId=com.your.group.id 
+	 -DartifactId=your-artifact-id 
+	 -Dversion=1.0.0.0 
+	 -Dpackaging=jar 
+	 -Dfile=path/to/file/jar_name.jar 
+	 -Durl=file://path/to/local/cloned/repo/public-mvn-repo/releases/
+	</code></pre>
+	
+	jar example
+	<pre><code>
+	  mvn deploy:deploy-file 
+	  -DgroupId=com.omniture 
+	  -DartifactId=omniture 
+	  -Dversion=1.0.0 
+	  -Dpackaging=jar 
+	  -Dfile=omniture_app_measurement.jar 
+	  -Durl=file:////Users/Blundell/Developer/git_repo/public-mvn-repo/releases/
+	</code></pre>
+	
+	jar source example
+	<pre><code>
+	 mvn deploy:deploy-file 
+	 -DgroupId=com.novoda 
+	 -DartifactId=sexp 
+	 -Dversion=1.0.0-SNAPSHOT 
+	 -Dpackaging=java-source 
+	 -Dfile=path/to/file/jar_name-1.0.0-javadoc.jar 
+	 -Durl=file://path/to/local/cloned/repo/public-mvn-repo/releases/ 
+	 -DgeneratePom=false
+	</code></pre>
+	
+	pom example 
+	<pre><code>
+	 mvn deploy:deploy-file 
+	 -DgroupId=com.novoda 
+	 -DartifactId=reporting 
+	 -Dversion=1.1.0 -Dpackaging=pom 
+	 -Dfile=poms/reporting/pom.xml 
+	 -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
+	</code></pre>
+	
+	apklib example (Adding pomFile parameter with location of relevant pom is important otherwise deployed pom will be broken due to missing dependencies. Also you will need to release parent pom in order to get apklib working, or you get error with parent not resolved)
+	<pre><code>
+	  mvn deploy:deploy-file -Dfile=/Users/Peter/github/ShowcaseView/library/target/showcaseview-library-3.1.apklib 
+	  -DpomFile=/Users/Peter/github/ShowcaseView/library/pom.xml 
+	  -DgroupId=com.github.espiandev 
+	  -DartifactId=showcaseview-library 
+	  -Dversion=3.1 
+	  -Dpackaging=apklib 
+	  -Durl=file:///Users/Peter/github/public-mvn-repo/releases/
+	</code></pre>
+	
+	You will also need to release parent pom of the apklib in order for project to resolve dependencies
 
 3. push the changes
 
