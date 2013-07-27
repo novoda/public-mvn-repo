@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>sexp</groupId>
+  <artifactId>core</artifactId>
+  <version>1.0.0-alpha</version>
+  <versioning>
+    <versions>
+      <version>1.0.0-alpha</version>
+      <version>1.0.1-alpha</version>
+    </versions>
+    <lastUpdated>20130727102303</lastUpdated>
+  </versioning>
+</metadata>
