@@ -1,45 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.novoda</groupId>
   <artifactId>novoda-checkstyle-checks</artifactId>
-  <name>Novoda Checkstyle Checks</name>
   <version>1.0</version>
-
-  <parent>
-    <groupId>com.novoda</groupId>
-    <artifactId>novoda-checkstyle-parent</artifactId>
-    <version>1.0</version>
-  </parent>
-
-  <dependencies>
-    <dependency>
-      <groupId>com.puppycrawl.tools</groupId>
-      <artifactId>checkstyle</artifactId>
-      <version>5.6</version>
-    </dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <includes>
-            <include>**/*.java</include>
-          </includes>
-          <forkMode>always</forkMode>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
-
 </project>
