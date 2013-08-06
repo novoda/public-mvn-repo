@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.kevinsawicki</groupId>
+  <artifactId>parent</artifactId>
+  <versioning>
+    <release>4.4.0-NOVODA</release>
+    <versions>
+      <version>4.4.0-NOVODA</version>
+    </versions>
+    <lastUpdated>20130806154922</lastUpdated>
+  </versioning>
+</metadata>
