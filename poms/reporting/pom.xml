@@ -9,7 +9,7 @@
 
   <groupId>com.novoda</groupId>
   <artifactId>reporting</artifactId>
-  <version>1.3.2</version>
+  <version>1.3.3</version>
   <name>reporting</name>
   <packaging>pom</packaging>
 
