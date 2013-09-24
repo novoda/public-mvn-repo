@@ -99,6 +99,22 @@ The following steps will help you in publishing a new relase of a project onto t
 6: Commit and push the changes in public-mvn-repo on your machine
 
 ======================================
+Releasing a .Jar with Depedencies
+======================================
+
+Ensure that your ``/target`` contains the output jar. If it doesn't, run ``mvn clean install``
+
+
+	mvn deploy:deploy-file 
+	-Dfile=/home/adam/dev/novoda/notils/java/target/java-1.0-SNAPSHOT.jar 
+	-DpomFile=/home/adam/dev/novoda/notils/java/pom.xml 
+	-DgroupId=com.novoda.notils 
+	-DartifactId=java 
+	-Dversion=1.0 
+	-Dpackaging=jar 
+	-Durl=file:///home/adam/public-mvn-repo/releases/ 
+	
+======================================
 Making local releases 
 ======================================
 
