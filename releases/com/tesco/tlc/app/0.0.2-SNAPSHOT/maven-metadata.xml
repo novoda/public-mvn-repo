@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.tesco.tlc</groupId>
+  <artifactId>app</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20131004.144943</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20131004144943</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>apklib</extension>
+        <value>0.0.2-20131004.144943-1</value>
+        <updated>20131004144943</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.2-20131004.144943-1</value>
+        <updated>20131004144943</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
