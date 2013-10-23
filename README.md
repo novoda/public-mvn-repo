@@ -27,8 +27,8 @@ https://github.com/novoda/public-mvn-repo/blob/master/releases/com/novoda/httpse
 to
 https://github.com/novoda/public-mvn-repo/raw/master/releases/com/novoda/httpservice/core/1.2/core-1.2.jar
 
-[[Making-Releases-Available]]
+[Making-Releases-Available](https://github.com/novoda/public-mvn-repo/wiki/Making-a-Project-Available)
 
-[[Releasing-a-Jar]]
+[Releasing-a-Jar](https://github.com/novoda/public-mvn-repo/wiki/Releasing-a-Jar)
 
 
