@@ -9,7 +9,7 @@ Novoda Public Maven Repository
 Use this repo with maven
 ======================================
 
-if you want to use the jars in this repository you need to set up a profile of maven in ~/.m2/settings.xml
+if you want to use the jars in this repository you need to set up a profile of maven in `~/.m2/settings.xml`
 to do that simply copy the file in the public-mvn-repo/poms/settings.xml
 
 [Making hosted Projects Available](https://github.com/novoda/public-mvn-repo/wiki/Making-a-Project-Available)
