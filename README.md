@@ -1,4 +1,3 @@
-======================================
 Novoda Public Maven Repository
 ======================================
 
@@ -7,7 +6,6 @@ Novoda Public Maven Repository
 
 ![img](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbT61gtbI8vDDV6phYN5ztFurC2Nm5kSaziPCtwfF76GX4Q4Nb)
 
-======================================
 Use this repo with maven
 ======================================
 
