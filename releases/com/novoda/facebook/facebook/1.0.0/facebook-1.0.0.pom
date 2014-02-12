@@ -5,4 +5,5 @@
   <groupId>com.novoda.facebook</groupId>
   <artifactId>facebook</artifactId>
   <version>1.0.0</version>
+  <packaging>aar</packaging>
 </project>
