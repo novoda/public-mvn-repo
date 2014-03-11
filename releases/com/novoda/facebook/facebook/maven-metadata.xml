@@ -3,11 +3,12 @@
   <groupId>com.novoda.facebook</groupId>
   <artifactId>facebook</artifactId>
   <versioning>
-    <release>1.0.1-Dpackaging=aar</release>
+    <release>1.0.1</release>
     <versions>
       <version>1.0.0</version>
       <version>1.0.1-Dpackaging=aar</version>
+      <version>1.0.1</version>
     </versions>
-    <lastUpdated>20140311163847</lastUpdated>
+    <lastUpdated>20140311164021</lastUpdated>
   </versioning>
 </metadata>
