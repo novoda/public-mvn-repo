@@ -3,7 +3,7 @@
   <groupId>com.novoda</groupId>
   <artifactId>notils</artifactId>
   <versioning>
-    <release>2.2.9</release>
+    <release>2.2.10</release>
     <versions>
       <version>2.2.0</version>
       <version>2.2.1</version>
@@ -15,7 +15,8 @@
       <version>2.2.7</version>
       <version>2.2.8</version>
       <version>2.2.9</version>
+      <version>2.2.10</version>
     </versions>
-    <lastUpdated>20140729094911</lastUpdated>
+    <lastUpdated>20140813100844</lastUpdated>
   </versioning>
 </metadata>
