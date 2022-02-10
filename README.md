@@ -1,3 +1,6 @@
+### THIS REPOSITORY IS OFFICIALLY NO LONGER UNDER MAINTENANCE since 10/02/2022 ###
+
+
 Novoda Public Maven Repository
 ======================================
 - This is a repository for open source Maven Projects available from Novoda.
